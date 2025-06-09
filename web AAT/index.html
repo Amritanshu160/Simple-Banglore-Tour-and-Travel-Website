@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <title>
+            best tourist attraction places at banglore
+        </title>
+        <link rel="stylesheet" href="webpagestyle.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="tourist places at banglore, best restaurents for eating food, etc.">
+        <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+        <meta name="amritanshu bhardwaj" content="places to visit at banglore">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+        function submitForm() {
+        const formData = {
+            FirstName: document.getElementById('FirstName').value,
+            LastName: document.getElementById('LastName').value,
+            email: document.getElementById('email').value,
+            number: document.getElementById('cno').value,
+            city: document.getElementById('city').value,
+            state: document.getElementById('state').value,
+            pincode: document.getElementById('pincode').value,
+            queries: document.querySelector('.box').value
+        };
+
+        fetch('http://localhost:3000/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert(data);  // Display response from the server
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+    }
+
+    </script>
+    <body>
+        <script src="app.js"></script>
+        <script src ="webscript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <div id="titlee">
+            <img id="logo" src="loogo.png">
+            <h1 id="webname">BENGALURU TRAVELS</h1>
+        </div>
+            <div class="navigationbar">
+            <ul>
+            <li><a class="a" id="homee" href="index.html">HOME</a></li>
+            <li><a class="a" id="lakess" href="#lakes">LAKES</a></li>
+            <li><a class="a" id="restaurantss" href="#restaurants">RESTAURANTS</a></li>
+            <li><a class="a" id="parkss" href="#parks">PARKS</a></li>
+            <li><a class="a" id="clubss" href="#clubs">CLUBS</a></li>
+            <li><a class="a" id="hillss" href="#hills">HILLS</a></li>
+            <li><a class="a" id="contactus" onclick="onclick()" href="">CONTACT US</a></li>
+            <div class="searchbar">
+            <li><input class="searchbar" id="searchbar" type="text" placeholder="Search"></li>
+            </div>
+        </ul>
+            </div>
+            <div id="content">
+                <h1 align="center" id="headd">PLACES TO VISIT IN BANGLORE</h1>
+            <div class="info">
+                <h2>ANY QUERIES</h2>
+                <form name="myform" id="myformid">
+                    <label for="fullname">First Name</label>
+<input type="text" id="FirstName" placeholder="FirstName" required><br/> <br/>
+<label for="LastName">LastName</label>
+<input type="text" id="LastName" placeholder="LastName" required><br/> <br/>
+<label for="email">Your Email</label>
+<input type="email" id="email" placeholder="Email" required><br/> <br/>
+<label for="cno">Contact No.</label>
+<input type="text" name="number" minlength="10" maxlength="10" placeholder="Enter
+10 Digit Mobile no." id="cno"><br/> 
+<span id="numloc"></span><br/>
+<label for="city">City</label>
+<input type="city" id="city" placeholder="city" required><br/> <br/>
+<label for="state">State</label>
+<input type="state" id="state" placeholder="state" required><br/> <br/>
+<label for="pincode">Pincode</label>
+<input type="pincode" id="pincode" placeholder="pincode" required><br/> <br/>
+<textarea class="box" row="15" column="4">
+any queries
+</textarea><br>
+<input  type="submit" id="submit" value="submit" >
+                </form>
+            </div>
+
+            
+        <div class="lakes" id="lakes">
+            <h1 class="lake">LAKES</h1>
+            <ol>
+                <li class="lakes1"><h2>Madiwala Lake</h2></li><br>
+                <img class="l1" alt="madiwala lake" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Discover_Fun_At_Madiwala_Lake_8th_jan_.jpg"><br>
+                <p class="p1">Spread over an area of 114.3 hectares, Madiwala Lake is one of the largest lakes in Bangalore. The lake is maintained by the Karnataka State Forest Department and is blessed with incredible beauty.
+                    While visiting Madiwala Lake in Bangalore, you should discover fun by engaging yourself in numerous activities including photography, strolling around lake, bird-watching and lots more.
+                    Children engage themselves with different activities while adults enjoy a pleasant and calm environment.<br>
+                    <br>
+                    <b>Location:</b> Bannerghatta Main Road, BTM 2nd stage, Bangalore<br>
+                    <b>Visit Timing:</b> 05.00 AM to 09.30 PM, all days.<br>
+                    <b>Boating:</b> 10.00 AM to 06.30 PM, all days.<br>
+                    <b>Fees:</b> INR 5/- per person (for Adult) & INR 2/- per kid (for Kids).</p><br>
+                <li class="lakes1"><h2>Ulsoor lake</h2></li><br>
+                <img class="l1" alt="ulsoor lake" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Do_Visit_The_Ulsoor_Lake_8th_jan_.jpg"><br>
+                <p class="p1">Ulsoor Lake, sprawled over 50 acres, is another exciting place where visitors love to access and enjoy nature up close. As one of the largest and oldest lakes in the region, Ulsoor Lake in Bangalore is invigorated with lush green surroundings including islands, and trees. Visitors can engage with a number of activities with boating being the best choice.
+                    Ulsoor Lake is also blessed with a children's play area. While visiting Ulsoor Lake in Bangalore, you can grab an opportunity to splurge at several places like Church Street, Commercial Street, and Indiranagar.<br>
+                    <br>
+                    <b>Location:</b> Near MG Road, Bangalore<br>
+                    <b>Visit Timing:</b> 6:00 AM to 8:00 PM (Wednesday closed)<br>
+                    <b>Boating:</b> NA<br>
+                    <b>Fees:</b> Free</p><br>
+                    <li class="lakes1"><h2>Hebbal lake</h2></li><br>
+                    <img class="l1" alt="hebbal lake" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Hebbal_lake_water_.jpg"><br>
+                    <p class="p1">Commissioned in the year 1537 by Kempe Gowda, Hebbal Lake is another splendid place that welcomes a large number of visitors and lets them experience total rejuvenation by beholding its ravishing surroundings. Spread over 150 acres, Hebbal Lake is a one-stop destination for those who enjoy watching different species of migratory birds. Capturing such birds through a camera is a wonderful experience that exhilarates photographers. Visitors enjoy an incredible view of sunset and sunrise. Boating is another exciting activity that makes you feel relished.<br>
+                        <br>
+                        <b>Location:</b> 13 km away from the Kempe Gowda Bus Stand, Bangalore<br>
+                        <b>Visit Timing:</b> 7:00 Am to 8:00 PM, any day<br>
+                        <b>Boating:</b> NA <br>
+                        <b>Fees:</b> INR 10/- per person</p><br>
+                    <li class="lakes1"><h2>Lal bagh lake</h2></li><br>
+                    <img class="l1" alt="lal bagh lake" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Beauty_Of_Flower_At_Lal_Bagh_Lake_8th_jan_.jpg"><br>
+                    <p class="p1">Located inside the Lal Bagh Botanical Garden, it's one of the must-visit places for visitors. Considered the best lake in Bangalore, it is beautified with lush green trees and flowers that make it a green and pleasant location; a paradise for photographers. Lal Bagh Lake is also popular as the hottest tourist spot for the bird watchers as a lot of migratory birds do visit the place. Whether you are couples or visiting with families, you will find this lake perfect and best suitable for all.<br>
+                        <br>
+                        <b>Location:</b> Mavalli, Bangalore<br>
+                        <b>Visit Timing:</b> 9:00 AM to 6:00 PM everyday (for public), from 6:00 AM to 9:00 AM and from 6:00 PM to 7:00 PM (for pedestrians).<br>
+                        <b>Entry Fees:</b> INR 10/- per person and free for children below 12 years of age.<br>
+                        <b>Flower Shows' Fees:</b> INR 40/- per person</p><br>
+                    <li class="lakes1"><h2>kengeri lake</h2></li><br>
+                    <img class="l1" alt="kengeri lake" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/The_Kengeri_Lake_8th_jan_.jpg"><br>
+                    <p class="p1">Spend some quality time with your family and create fantastic memories that you can preserve for the whole life. Sprawled over 25 acres, Kengeri Lake is the most happening place for boating, while rejuvenating in a pleasant environment. Apart from boating, this lake is blessed with other facilities as well like the islet, recreational area, kid's play zone, and many more.<br>
+                        <br>
+                        <b>Location:</b> Kengeri Satellite Town, Bangalore<br>
+                        <b>Timing</b>: Any time<br>
+                        <b>Entry Fees:</b> Free<br>
+                        <b>Boating:</b> NA</p><br>
+                    <li class="lakes1"><h2>Hesaraghatta Lake</h2></li><br>
+                    <img class="l1" alt="" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Hesaraghatta_Lake_8th_jan_.jpg"><br>
+                    <p class="p1">Sprawled over an area of 1,000 acres, Hesaraghatta Lake is another hotspot in Bangalore which is explored by nature-lovers. Hesaraghatta Lake is referred to as a small bird sanctuary that houses different species of birds such as Bush Larks, Bulbuls, and Myna. The exotic beauty of this lake accompanied by its lush green surroundings lets you get rid of the stress level.<br>
+                        <br>
+                        <b>Location:</b> 18 km to the north-west of Bangalore<br>
+                        <b>Entry Fees:</b> NA<br>
+                        <b>Boating:</b> NA</p><br>
+            </ol>
+        </div><hr></hr>
+
+        <div id="content1">
+        <div id="restaurants">
+            <h1 class="rest">RESTAURANTS</h1>
+            <a href="https://www.hardrockcafe.com/location/bengaluru/" ><img class="restaurent" id="r1" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Hard-Rock-Cafe1.jpg" alt="Hard Rock Cafe Bengaluru"></a>
+            <figcaption class="rr1" id="r1">Hard Rock Cafe Bengaluru</figcaption>
+            <a href="https://windmills-india.com/" ><img class="restaurent" id="r2" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Windmills-Craftworks.jpg" alt="Windmill Craftworks"></a>
+            <figcaption class="rr1" id="r2">Windmill Craftworks</figcaption>
+            <a href="https://www.zomato.com/bangalore/byg-brewski-brewing-company-hennur-bangalore" ><img class="restaurent" id="r3" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Big-Brewsky.jpg" alt="Big Brewsky"></a>
+            <figcaption class="rr1" id="r3">Big Brewsky</figcaption>
+            <a href="https://magicpin.in/Bangalore/Koramangala/Restaurant/Koramangala-Social/store/35345/menu/" ><img class="restaurent" id="r4" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Koramangala-Social.jpg" alt="Koramangala Social"></a><br>
+            <figcaption class="rr1" id="r4">Koramangala Social</figcaption>
+            <a href="https://magicpin.in/Bangalore/Indiranagar/Restaurant/Toit/store/5cbb/menu/" ><img class="restaurent" id="r5" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Toit.jpg" alt="Toit Indiranagar"></a>
+            <figcaption class="rr1" id="r5">Toit Indiranagar</figcaption>
+            <a href="https://thehummingtree.com/" ><img class="restaurent" id="r6" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/The-Humming-Tree.jpg" alt="The Humming Tree"></a>
+            <figcaption class="rr1" id="r6">The Humming Tree</figcaption>
+            <a href="https://magicpin.in/Bangalore/Indiranagar/Restaurant/Empire-Restaurant/store/1c754/menu/" ><img class="restaurent" id="r7" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Empire-Restaurant.jpg" alt="Empire Restaurant, Church Street"></a>
+            <figcaption class="rr1" id="r7">Empire Restaurant, Church Street</figcaption>
+            <a href="https://blackpearlmarathahalli.com/" ><img class="restaurent" id="r8" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/The-Black-Pearl.jpg"  alt="The Black Pearl, Marathahalli"></a><br>
+            <figcaption class="rr1" id="r8">The Black Pearl, Marathahalli</figcaption>
+            <a href="https://www.jwkitchenbengaluru.com/" ><img class="restaurent" id="r9" src="https://lh3.googleusercontent.com/T4jvwfJCobV-TfBJVTqnuXaYJE15U9M5g7f1U91nbAtXdz0DzS-Xz25WuJHolXZTvZ4He00Cugu7GOzNFcphfzalMkU=w900-rw" alt="JW Kitchen"></a>
+            <figcaption class="rr1" id="r9">JW Kitchen</figcaption>
+            <a href="https://magicpin.in/Bangalore/Hebbagodi/Restaurant/Time-Traveller/store/51233b/" ><img class="restaurent" id="r10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_ciVnZCRZmxoqpQDc2cUAnpj3ENtlosOXg&usqp=CAU" alt="time traveller restaurent"></a>
+            <figcaption class="rr1" id="r10">time traveller restaurent</figcaption>
+            <a href="https://magicpin.in/Bangalore/Hebbal/Restaurant/Treat-Restaurant/store/1cbc2/menu/" ><img class="restaurent" id="r11" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Treat-Indiranagar.jpg" alt="Treat Restaurant, Indiranagar"></a>
+            <figcaption class="rr1" id="r11">Treat Restaurant, Indiranagar</figcaption>
+            <a href="https://www.dineout.co.in/bangalore/koshys-bar-restaurant-st-marks-road-central-bangalore-5065/menu"><img  class="restaurent" id="r12" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/10/Koshys.jpg" alt="Koshy's Restaurant"></a>
+            <figcaption class="rr1" id="r12">Koshy's Restaurant</figcaption>
+        </div>
+        <hr></hr>
+    </div>
+
+        <div id="parks">
+            <h1 class="park">PARKS</h1>
+            <ol>
+                <li class="p1">cubbon park</li><br>
+                <img class="pic1" src="https://img.staticmb.com/mbcontent/images/uploads/2022/10/Cubbon%20park.jpg"><br>
+                <p class="par">The Cubbon Park is situated in the central administrative area of the city of Bengaluru. The park is home to the statues of famous personalities as well as rich and diverse flora and fauna.
+                    This also happens to be one of the most famous parks in Bangalore. The park is aesthetically pleasing and garners the attention of tourists and nature lovers alike.
+                    <br><br>
+                    <b>Address:</b> Sampangi Rama Nagar, Bengaluru<br>
+                    <b>Timings:</b> Open all the time but 5 am to 8 am has been declared silent time.<br>
+                    <b>Entry Fee: No entry fee</p><br>
+                    <li class="p1">Lalbagh Botanical Park</li><br>
+                    <img class="pic1" src="https://static-blog.treebo.com/wp-content/uploads/2018/01/Webp.net-compress-image-1-7.jpg"><br>
+                    <p class="par">One of the most prominent remnants of the Wadiyar dynasty, the Lalbagh Botanical Park pays homage to Hyder Ali who had ordered the construction of the park (however, it was his son, Tipu Sultan, who saw to its completion).
+                    The park spans over 240 acres right in the middle of Bangalore and houses over a thousand types of flora and a few endangered species of birds as well. On public holidays, the park typically hosts special events like the Lalbagh Glass House Botanical Show, a true spectacle.
+                        <br><br>
+                        <b>Address:</b> Mavalli, Bangalore<br>
+                        <b>Timings:</b> 7 am to 7 pm<br>
+                        <b>Entry Fee:</b> Rs 20</p><br>
+                    <li class="p1">Cariappa Memorial Park</li>
+                    <img class="pic1" src="https://static-blog.treebo.com/wp-content/uploads/2018/01/Webp.net-compress-image-2-8.jpg"><br>
+                    <p class="par">Cariappa Memorial Park is situated in the heart of Bangalore city as a part of the Parade Grounds on M G Road. The park is spread across 22 acres and is dedicated to the Field Marshal K M Cariappa who served in the Indian Armed Forces.
+                    The Indian Army is in charge of the maintenance of the park. The one unique offering of the park is that it provides games and a play area with a military theme. The park is divided into six parts and has attractions like waterfalls, Burma Bridges and zigzag tunnels.
+                        <br><br>
+                        <b>Address:</b> Cubbon Road, Shivaji Nagar<br>
+                        <b>Timings:</b> Monday to Sunday 5.30 am to 8 pm, Saturday 1 pm to 7 pm, Sunday 9 am to 7 pm<br>
+                        <b>Entry Fee:</b> No entry fee</p><br>
+                        <li class="p1">Bannerghatta National Park</li><br>
+                        <img class="pic1" src="https://static-blog.treebo.com/wp-content/uploads/2018/01/Webp.net-compress-image-7-2.jpg"><br>
+                        <p class="par">Although located 20 kilometres from Bangalore, Bannerghatta National Park is one of those parks that can’t be absolutely missed. The park is host to a variety of wildlife and includes various species of animals, ranging from elephants to Royal Bengal Tigers.
+                            The park also doubles as a sanctuary for elephants as well as endangered species of tiger. The ark is also blessed with a diverse fauna and is a great destination for trekkers and adventure lovers.
+                            <br><br>
+                            <b>Address:</b> Bannerghatta Road, Bannerghatta Circle, Bannerghatta<br>
+                            <b>Timings:</b> 9 am to 5 pm<br>
+                            <b>Entry Fee:</b> Rs. 80 per adult, Rs. 40 per child</p><br>
+                            <li class="p1">M N Krishna Rao Park</li>
+                            <img class="pic1" src="https://static-blog.treebo.com/wp-content/uploads/2018/01/Webp.net-compress-image-9-2.jpg"><br>
+                            <p class="para">This park is only a stone’s throw away from Lalbagh Botanical Gardens and is one of the oldest parks in the city. It houses some of the oldest trees seen in Bangalore and also has several canopies for the numerous visitors that come here on a daily basis. It is named after the Dewan of Mysore, who remains the park’s largest donor.
+                                The park serves as a haven to the local residents as it provides a place for those who want to invest in their daily fitness. The park also has a large association that works closely with the management for the upkeep and maintenance of the park. The Neralu Tree Festival occurs every year, during which the sanctity of the trees in the park is celebrated.
+                                <br><br>
+                                <b>Address:</b> Dewan Madhava Rao Road, Basavanagudi<br>
+                                <b>Timings:</b> 6 am to 7 pm<br>
+                                <b>Entry Fee:</b> No entry fee</p><br>
+            </ol>
+        </div>
+        <hr></hr>
+        <div id="clubs">
+            <h1 class="clubs">CLUBS</h1>
+            <ol>
+                <li class="c1">NoLimmits Lounge and Club</li>
+                <img class="c2" src="https://www.namasteindiatrip.com/blog/wp-content/uploads/2022/03/NoLimmits-Lounge-and-Club.jpg"><br>
+                <p class="c3">Looking for a place with an awesome selection of drinks and good Bollywood music? Your search stops here. The NoLimmits lounge and club is just the place for you. Get your Ganga together and head over to NoLimmits. The place where drinks flow freely and the music never stops. A great place for birthday celebrations, bachelor/bachelorette parties or just to get rid of mid-week blues. The seating here is perfect for you to sit back and relax after a foot-thumping night.
+                    <br><br>
+                    <b>Address:</b> Allied Grand Plaza, 2nd Floor, 8, Magrath Rd, Above Nalli Silks, Opposite Garuda Mall, Ashok Nagar, Bengaluru, Karnataka 560025<br>
+                    <b>Timings:</b> 11:30 Am to 1:00 Am</p><br>
+                <li class="c1">Skyye</li>
+                <img class="c2" src="https://www.namasteindiatrip.com/blog/wp-content/uploads/2022/03/Skyye.jpg"><br>
+                <p class="c3">Located in one of the most upscale malls of Bangalore in UB city, Skyye is a cool hangout spot in Bangalore. Deemed as one of the best nightclubs in Bangalore, Skyye is worth a visit even if you are travelling here. The lit dance floor, an electrifying ambiance, and delicious food choices makes this place different from the rest. Other than the spectacular food and drinks menu, Skyye offers a magnificent skyline view of the city.
+                    <br><br>
+                <b>Address:</b> 24, 16th Floor, Uber level, Canberra Block, UB City, Vittal Mallya Road, Bengaluru, Karnataka 560001<br>
+                <b>Timings:</b> 05:30 Pm to 11:30 Pm></p><br>
+                <li class="c1">XU, Old Airport Road</li>
+                <img class="c2" src="https://static-blog.treebo.com/wp-content/uploads/2018/02/Webp.net-compress-image-3-3.jpg"><br>
+                <p clss="c3">A classy casual dining restaurant that doubles as a nightclub, XU is slowly emerging into one of the hottest spots for partying dance clubs in Bangalore. The club often hosts a number of local bands apart from having an in-house DJ.
+                    Music pertaining to various genres are played at XU, attracting party-lovers of all kinds to the place. Featuring a classy ambiance and a splendid menu of food and beverages, XU should definitely be part of your bucket-list when we're discussing parties.
+                    <br><br>
+                    <b>Address:</b> Leela Palace, Old Airport Road, Bangalore<br>
+                    <b>Cost for Two:</b> INR 1,500 approx</p><br>
+                <li class="c1">Vapour Pub and Brewery, Indiranagar</li>
+                <img class="c2" src="https://static-blog.treebo.com/wp-content/uploads/2018/02/Webp.net-compress-image-10-2.jpg"><br>
+                <p class="c3">A microbrewery with a wonderful rooftop ambiance and comfortable seating space, Vapour is undeniably one of the top places in the city to spend an evening sipping brewed beers and trying out some sick moves. As we all know, craft beers and dancing make a great pair!
+                    Vapour is one place that fits the bill as a (sports) bar, lounge, and nightclub, depending on what you’re looking out for.
+                    <br><br>
+                    <b>Address:</b> 773, HAL 2nd Stage, 100 Feet Road, Indiranagar, Bangalore<br>
+                    <b>Cost for Two:</b> INR 1,400 approx</p><br>
+                <li class="c1">Boho</li>
+                <img class="c2" src="https://res.cloudinary.com/https-highape-com/image/upload/q_auto:eco,f_auto,h_380/v1636229494/egnlxeubblfts9lbzsrw.jpg"><br>
+                <p class="c3">With colourful decor from the 70s with a lit peace symbol, floral patterns, doodled blackboard, and pop-up posters all over, Boho takes us back to the 70s era in an instant. Enjoy a night filled with commercial blockbusters, finger food such as nachos, sauteed corn and french fries and variety of booze options and rock the dance floor with your favourite dance partner. Located around several other bars, it is a perfect option to begin your bar hopping and dancing through Koramangala as it does get pretty crowded here. 
+                    <br><br>
+                    <b>address:</b> Koramangala, banglore<br>
+                    <b>cost for Tow:</b> INR 1,500 approx</p><br>
+            </ol>
+        </div>
+        <div id="hills" class="hills">
+            <h1 class="hills">HILLS</h1>
+            <ol>
+                <li class="h1">Skandagiri: 62 Km From Bangalore</li>
+                <img class="l1" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2019/02/Skandagiri.jpg"><br>
+                <p class="h3">The trekking adventures which makes Skandagiri Hills extremely exciting are now also done after the night sets in. Owing to the simple and well-organized trails, a Skandagiri trek is ideal for first-timers. Get ready for adrenaline boost while covering the 10 km sunrise trek. The trek begins after 10 pm when night has fallen. This moderately difficult trek can be taken up by any individual. It is one of the most popular hill stations near Bangalore within 100 kms.<br>
+                    <br>
+                    <b>How to Reach:</b><br><br>
+                    
+                    <b>By Road:</b> 62 kms from Bangalore, the distance from Skandagiri to Nandi Hills will take up to 1hour 20 minutes to cover by car.<br>
+                    <b>By Rail:</b> The nearest railway station is Bangalore City Junction Railway Station, which is just 60 kms away. It takes about 1 hour to reach the destination.
+                    Best time to visit: October to February<br>
+                    
+                    <b>Major attractions:</b> Papagani Temple and Tipu Sultan's fortress are fast becoming tourist hotspots. It's a perfect getaway for history and nature lovers.</p><br>
+                <li class="h1">Nandi Hills: 63 Km From Bangalore</li>
+                <img class="l1" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2015/05/Nandi-Hills.jpg">
+                <p class="h3">Nandi Hills is one of the nearest and famous hill station near Bangalore. It is one of the hill stations near Bangalore within 100 km. Known for the scenic sunrise, pleasant climate and distance from the city, it is a frequented destination.<br><br>
+
+                    <b>How to Reach:</b><br><br>
+                    
+                    <b>By Road:</b> 63 km from Bangalore city, it takes 1 hour 30 minutes to reach Nandi Hills. There are Government and Private Buses plying from Bangalore.<br>
+                    <b>By Rail:</b> Nearest railway station Chikkaballapur, 42 km away, taking about 0.5-1 hour to reach.<br>
+                    <b>Best time to visit:</b> October to June
+                    
+                    Major attractions: Tipu Sultan's summer palace is situated on the top of Nandi Hills and it is the best weekend destination of Bangloreans. You can also go try paragliding or watch the magnificent sun rise.</p><br>
+                <li clss="h1">Shivaganga: 77 Km From Bangalore</li>
+                <img class="l1" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2019/02/Shivaganga.jpg">
+                <p class="h1">There are many water spots on the way to the top of the hill and people there believe the water is of the sacred river Ganga. As a result of this, the hillock gained its name as Shivaganga. The sculptured marvel of 'Nandi'- the bull is a major attraction of the place and attracts a lot of visitors. The beautiful hills also attract a lot of adventure sports enthusiasts providing them opportunities for trekking and rock climbing. It is one of the best hill stations near Bangalore within 50 kms.<br><br>
+
+                    <b>How to Reach:</b><br><br>
+                    
+                    <b>By Road:</b> 77 km from Bangalore, the distance from Tumkur Ksrtc Bus Stand to Shivaganga Hills will take 1-2 hours.<br>
+                    <b>By Rail:</b> The nearest railway station is in Dobbespet, which is just 8 km away.<br>
+                    <b>Best time to visit:</b> October to February<br>
+                    <b>Major attractions:</b> The place also known for its spiritual attractions is also known as Dakshina Kashi or Kashi of South India because of the numerous temples situated here like Gangadhareshwara temple, Patala Gange, Olakala Teertha and Nandi Statue.</p><br>
+                <li class="h1">Melagiri: 82 Km From Bangalore</li>
+                <img class="l1" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2019/02/Melagiri.jpg">
+                <p class="h1">If you come to Bangalore and do not visit Melagiri Hills, you'll forever regret that decision! One of the most beautiful places to visit near Bangalore during the summer. Many famous Indian movies like 'Roja' and 'Raavan' have been shot here.
+
+                    <b>How to Reach:</b><br><br>
+                    
+                    <b>By Road:</b> 82 kms away from Bangalore, the driving distance from Hogenakkal Falls to Melagiri Hills is 48 kms. It will take you 1 hour.<br>
+                    <b>By Rail:</b> It cannot by accessed via rail.<br>
+                    <b>Best time to visit:</b> Throughout the year<br>
+                    <b>Major attractions:</b> You will come across Hogenakkal Falls. They are of the oldest waterfalls in the world. It's the point where the Cauvery river splits into multiple streams creating breathtaking waterfalls.</p><br>
+                <li class="h1">Horsley Hills: 169 Km From Bangalore</li>
+                <img class="l1" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2015/05/Horsley-Hills.jpg">
+                <p class="h1">It is one of the unexplored hill stations near Bangalore unlike the others. It attracts visitors because of its beautiful scenic views and pleasant climate. These hills shelter a variety of wild animals and birds. It's a perfect getaway for all nature lovers.<br>
+
+                    <b>How to Reach:</b><br><br> 
+                    
+                    <b>By road:</b> 169 Km from Bangalore so you can hire a taxi to reach Horsely Hills in 3-4 hours.<br>
+                    <b>By rail:</b> Nearest station is Madnapalle which is 28 km.<br>
+                    <b>Best time to visit:</b> December to March<br>
+                    
+                    <b>Major attractions:</b> Go to Horsley hill museum, Mallamma Temple and Highview Sight point to enjoy the serene beauty of hills.</p><br>
+            </ol>
+        </div>
+        <div class="last">
+            <a class="la1" href="">about us</a><br><br>
+            <a class="la1" href="">team</a><br><br>
+            <a class="la1" href="">Bengalurutravels@gmail.com</a><br><br>
+            <a class="la2" href="">policies</a><br><br>
+            <a class="la2" href="">terms and condition</a><br><br>
+            <a class="la2" href="">privacy policy</a><br><br>
+            <a class="la3" href="">more</a><br><br>
+            <a class="la3" href="">FAQS</a><br><br>
+            <a class="la3" href="">contact us</a><br><br><br><br>
+            <adress id="addr"><b>corporate office</b><br>
+                2rists attraction private limited<br>
+                Address: Plot No - 121 , 2nd Floor,<br>
+                Supreme Cowork, Akash Institute,<br>
+                Bhagwan Mahaveer Marg, Sector 44,<br>
+                basavangudi -560019, banglore<br>
+                Landline: 1800 123 5555</adress>
+        </div>
+    </div>
+        <form>
+            <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
+           </form>
+    </body>
+</html>

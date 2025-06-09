@@ -1,0 +1,253 @@
+#titlee{
+    font-size: larger;
+    color: white;
+    background-color: #333;
+    height: 100px;
+}
+#headd{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+#logo{
+    size: 10px;
+    float: left;
+    height: 90px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+#webname{
+    font-family: fantasy;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: navy;
+  }
+
+  div.searchbar{
+    position: relative;
+    top: 5px;
+    float: right;
+    margin-right: 10px;
+  }
+  #searchbar{
+    border-color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+  }
+
+  #content{
+  
+    background-image: url(https://cdn.pixabay.com/photo/2014/12/02/02/44/bokeh-553439__340.jpg)
+}
+.lakes{
+    width: 760px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    
+    
+}
+
+.l1{
+    position: relative;
+    left: 00px;
+    width: 700px;
+}
+.restaurent{
+    width: 200px;
+    height: 100px;
+}
+#r1,#r5,#r9{
+    position:relative;
+    left: 50px;
+}
+#r2,#r6,#r10{
+    position: relative;
+    left: 380px;
+    /*120*/
+}
+#r3,#r7,#r11{
+    position: relative;
+    left: 720px;
+    /*240*/
+}
+#r4,#r8,#r12{
+    position:relative;
+    left:1060px;
+    /*350*/
+}
+#r5{
+    position: relative;
+    bottom: 300px;
+}
+#r2{
+    position: relative;
+    bottom: 120px;
+}
+#r3{
+    position: relative;
+    bottom: 240px;
+}
+#r4{
+    position: relative;
+    bottom: 360px;
+}
+#r6{
+    position: relative;
+    bottom: 420px;
+}
+#r7{
+    position: relative;
+    bottom: 540px;
+}
+#r8{
+    position: relative;
+    bottom: 660px;
+}
+#r9{
+    position: relative;
+    bottom: 600px;
+}
+#r10{
+    position: relative;
+    bottom: 720px;
+}
+#r11{
+    position: relative;
+    bottom: 840px;
+}
+#r12{
+    position: relative;
+    bottom: 960px;
+}
+.rr1,.lakes1{
+    width: 250px;
+    
+    font-weight: bold;
+}
+#restaurants{
+    
+    width: 760px;
+    height: 600px;
+}
+#parks{
+    
+    width: 760px;
+}
+.pic1{position: relative;
+    left: 00px;
+    width: 700px;
+
+}
+.par{
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#clubs{
+    
+    width: 760px;
+}
+.c2{
+    position: relative;
+    left: 00px;
+}
+#hills{
+    
+    width: 760px;
+}
+.last{
+    background-color: #333;
+    color: white;
+    height: 150px;
+    
+}
+
+.la1,.la2,.la3{
+    margin: 10px;
+    text-transform: capitalize;
+}
+#addr{
+    text-align: right;
+    position: relative;
+    left: 1000px;
+    bottom: 360px;
+    
+}
+.la1{
+    position: relative;
+    top: 10px;
+}
+.la2{
+    position: relative;
+    left: 300px;
+    bottom: 100px;
+}
+.la3{
+    position: relative;
+    left: 700px;
+    bottom: 210px;
+}
+
+.last a{
+    color: white;
+}
+
+
+
+
+
+div.info{
+    background-color: white;
+    border:solid black;
+    margin-left: 150px;
+    width:300px;
+    border-radius: 10px;
+    position: absolute;
+    left: 800px;
+    top: 500px;
+    
+    }
+.box{
+        position: relative;
+        left: 60px;
+    }
+    #submit{
+        position: relative;
+        left: 100px;
+    }
+    input{
+    margin:10px;
+    }
+    span{
+    color:red;
+    }
+    h3{
+    margin-top: 50px;
+    margin-left: 150px;
+    width:300px;
+    }

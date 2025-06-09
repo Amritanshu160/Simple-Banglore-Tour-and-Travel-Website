@@ -17,7 +17,7 @@ function onClick()
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBQ-ASVf_o-c506tcYMg-nnWeeE8lzte2g",
+  apiKey: "YOUR_API_KEY",
   authDomain: "bangloretravel.firebaseapp.com",
   databaseURL: "https://bangloretravel-default-rtdb.firebaseio.com",
   projectId: "bangloretravel",
